@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:behaviors="clr-namespace:Corcav.Behaviors;assembly=Corcav.Behaviors"
+    x:Class="horaDoCodigo.View.MinhaPagina">
+    <StackLayout VerticalOptions= "Center" Padding="10">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+            <Label Text ="Digite Seu Nome" VerticalOptions="Center" />
+            <Entry  HorizontalOptions="FillAndExpand" >
+                <behaviors:Interaction.Behaviors>
+                    <behaviors:BehaviorCollection>
+                        <behaviors:TextChangedBehavior Text="{Binding Nome, Mode=TwoWay}" />
+                        <behaviors:EventToCommand EventName="TextChanged" Command="{Binding ValidarTextoModificadoCommand}" />
+                    </behaviors:BehaviorCollection>
+                </behaviors:Interaction.Behaviors>
+            </Entry>
+        </StackLayout>
+        <Label Text ="{Binding Nome}" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+        <Button Text = "MOSTRAR ALERT" Command="{Binding  MostrarAlertCommand}" />
+    </StackLayout>
+</ContentPage>
