@@ -3,7 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:behaviors="clr-namespace:Corcav.Behaviors;assembly=Corcav.Behaviors"
-    x:Class="horaDoCodigo.View.MinhaPagina">
+    x:Class="horaDoCodigo.View.MinhaPagina"
+    Title="Exemplo binding">
     <StackLayout VerticalOptions= "Center" Padding="10">
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
             <Label Text ="Digite Seu Nome" VerticalOptions="Center" />

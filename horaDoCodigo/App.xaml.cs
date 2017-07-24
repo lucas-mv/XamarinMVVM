@@ -17,7 +17,7 @@ namespace horaDoCodigo
         public App()
         {
             InitializeComponent();
-            MainPage = new MinhaPagina();
+            MainPage = new PaginaInicial();
         }
 
         protected override void OnStart()

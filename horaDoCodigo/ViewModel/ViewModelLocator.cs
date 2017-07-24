@@ -41,6 +41,7 @@ namespace horaDoCodigo.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MinhaPaginaViewModel>();
+            SimpleIoc.Default.Register<PaginaInicialViewModel>();
         }
 
         public MinhaPaginaViewModel MinhaPagina
@@ -48,6 +49,14 @@ namespace horaDoCodigo.ViewModel
 			get
 			{
 				return ServiceLocator.Current.GetInstance<MinhaPaginaViewModel>();
+			}
+		}
+
+        public PaginaInicialViewModel PaginaInicialViewModel
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<PaginaInicialViewModel>();
 			}
 		}
         

@@ -14,7 +14,7 @@ namespace horaDoCodigo.ViewModel
         {
             get { return _nome; }
             set 
-            { 
+            {
                 Set(() => Nome, ref _nome, value); 
             }
         }
